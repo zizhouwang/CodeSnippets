@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Alamofire POST</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>Alamofire.request(.POST, "", parameters: [
+    "":""
+    ]).responseJSON { (request, response, data, error) -&gt; Void in
+    //从此处开始网络访问出现结果 进行处理
+        
+    if (error != nil) {
+        //网络访问出错
+        var alert_view = UIAlertView(title: "", message: "网络无法连接", delegate: self, cancelButtonTitle: "OK")
+            alert_view.show()
+        var popTime = dispatch_time(DISPATCH_TIME_NOW, (Int64)(0.5 * CGFloat(NSEC_PER_SEC))) as dispatch_time_t
+        dispatch_after(popTime, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { () -&gt; Void in
+            alert_view.dismissWithClickedButtonIndex(0, animated: true)
+        })
+        return
+    }
+        
+        
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BFD65208-835F-40A7-9BE7-56A20239BEA3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Alamofire POST request responseJSON wzzyinqiang</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Alamofire POST request responseJSON wzzyinqiang</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

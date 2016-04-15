@@ -3,23 +3,35 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>for</string>
+	<string>init</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>for any_object in &lt;#collection#&gt; {
-            var &lt;#name#&gt; = any_object as! &lt;#Class#&gt;
-        }</string>
+	<string>override init(frame: CGRect) {
+    super.init(frame: frame)
+    
+    self.initControl(false)
+}
+
+required init(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    
+    self.initControl(true)
+}
+
+func initControl(is_in_storyboard: Bool) {
+    
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>65287323-3863-45B2-80BD-98485312D910</string>
+	<string>18068052-39C7-4D8B-847A-D02B09DC4743</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>for</string>
+	<string>three init wzzyinqiang</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>wzzyinqiang for</string>
+	<string>three init wzzyinqiang</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

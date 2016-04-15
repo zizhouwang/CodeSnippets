@@ -19,7 +19,7 @@
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString * identify = @"successful_matches_cell";
+    static NSString * identify = @"";
 
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identify];
 

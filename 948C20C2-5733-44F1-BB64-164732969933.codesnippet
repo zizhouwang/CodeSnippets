@@ -3,23 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>for</string>
+	<string>viewWillAppear</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>for any_object in &lt;#collection#&gt; {
-            var &lt;#name#&gt; = any_object as! &lt;#Class#&gt;
-        }</string>
+	<string>- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    
+    &lt;#content#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>65287323-3863-45B2-80BD-98485312D910</string>
+	<string>948C20C2-5733-44F1-BB64-164732969933</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>for</string>
+	<string>viewWillAppear</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>wzzyinqiang for</string>
+	<string>viewWillAppear</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

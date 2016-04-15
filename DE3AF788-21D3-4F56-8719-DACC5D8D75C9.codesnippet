@@ -3,23 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>for</string>
+	<string>BottomLineLayer</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>for any_object in &lt;#collection#&gt; {
-            var &lt;#name#&gt; = any_object as! &lt;#Class#&gt;
-        }</string>
+	<string>CALayer * bottom_line_layer = [CALayer layer];
+        
+bottom_line_layer.frame = CGRectMake(0, &lt;#height#&gt; - 1.0f, &lt;#width#&gt;, 1.0f);
+
+bottom_line_layer.backgroundColor = [UIColor colorWithWhite:220/255.0f  alpha:1.0f].CGColor;
+
+bottom_line_layer.name = @"bottom_line_layer";</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>65287323-3863-45B2-80BD-98485312D910</string>
+	<string>DE3AF788-21D3-4F56-8719-DACC5D8D75C9</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>for</string>
+	<string>BottomLineLayer</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>wzzyinqiang for</string>
+	<string>BottomLineLayer</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

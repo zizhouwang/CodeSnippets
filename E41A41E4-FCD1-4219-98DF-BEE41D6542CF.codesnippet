@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>for</string>
+	<string>define</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>for any_object in &lt;#collection#&gt; {
-            var &lt;#name#&gt; = any_object as! &lt;#Class#&gt;
-        }</string>
+	<string>let DEF_&lt;#NAME#&gt; = &lt;#CONTENT#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>65287323-3863-45B2-80BD-98485312D910</string>
+	<string>E41A41E4-FCD1-4219-98DF-BEE41D6542CF</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>for</string>
+	<string>DEFINE WZZYINQAING</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>wzzyinqiang for</string>
+	<string>DEFINE WZZYINQAING</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
